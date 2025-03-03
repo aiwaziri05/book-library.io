@@ -38,6 +38,7 @@ p {
 }
 
 input[type='text'],
+input[type='number'],
 button {
 	font-family: inherit;
 	font-size: 90%;
@@ -80,7 +81,8 @@ form .input-field {
 	margin-block-end: 0.75rem;
 }
 
-.input-field input[type='text'] {
+.input-field input[type='text'],
+.input-field input[type='number'] {
 	width: 100%;
 	outline: 0.145em solid var(--text-muted);
 }
@@ -91,7 +93,8 @@ form .input-field {
 	margin-block-end: 0.45rem;
 }
 
-.input-field > input[type='text'] {
+.input-field > input[type='text'],
+.input-field input[type='number'] {
 	padding-block: 0.5em;
 }
 
