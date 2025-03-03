@@ -1,0 +1,162 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-color: hsl(0, 0%, 18%);
+	--sidebar-clr: hsl(240, 3%, 12%);
+	--text-clr: hsl(0, 0%, 88%);
+	--text-muted: hsl(0, 0%, 68%);
+	--red-clr: hsl(365, 70%, 51%);
+	--accent-blue: hsl(227, 65%, 63%);
+}
+
+html {
+	font-family: 'Poppins', system-ui;
+	line-height: 1.5;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	color: var(--text-clr);
+
+	display: grid;
+	grid-template-columns: 18rem 1fr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+input[type='text'],
+button {
+	font-family: inherit;
+	font-size: 90%;
+	appearance: none;
+	outline: none;
+	border: 0;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25em;
+	transition: all 0.4s ease;
+}
+
+button,
+label {
+	display: inline-block;
+	transition: all 0.4s ease;
+	cursor: pointer;
+}
+
+aside,
+main {
+	padding: 1rem;
+}
+
+aside {
+	background-color: var(--sidebar-clr);
+	border-right: 0.125em solid var(--accent-blue);
+	overflow: hidden;
+}
+
+.sidebar h3 {
+	font-size: 1.5rem;
+	margin-block-end: 1rem;
+}
+
+.sidebar form {
+	max-width: 100%;
+}
+
+form .input-field {
+	margin-block-end: 0.75rem;
+}
+
+.input-field input[type='text'] {
+	width: 100%;
+	outline: 0.145em solid var(--text-muted);
+}
+
+.input-field label {
+	display: inline-block;
+	color: var(--text-muted);
+	margin-block-end: 0.45rem;
+}
+
+.input-field > input[type='text'] {
+	padding-block: 0.5em;
+}
+
+.input-field input[type='text']:focus {
+	outline-color: var(--accent-blue);
+}
+
+.input-field:focus-within > label {
+	color: var(--accent-blue);
+}
+
+.input-field input[type='checkbox'] {
+	margin-inline-end: 0.125rem;
+}
+
+.input-field input[type='checkbox']:checked ~ label {
+	color: var(--accent-blue);
+}
+
+form button[type='button'] {
+	width: 100%;
+	background-color: var(--accent-blue);
+	color: var(--text-clr);
+	padding-block: 0.5em;
+
+	&:hover {
+		opacity: 0.85;
+	}
+}
+
+.main h1 {
+	margin-block-end: 1.5rem;
+	font-size: 2rem;
+}
+
+main table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th {
+	text-align: left;
+}
+
+table th,
+table tr,
+table td {
+	padding: 0.5rem 1rem;
+}
+
+table th {
+	padding-block: 0.75rem;
+	background-color: var(--accent-blue);
+}
+
+table tr {
+	background-color: var(--sidebar-clr);
+	border-bottom: 1px solid #939393;
+}
+
+table tr:last-child {
+	border-bottom: 0;
+}
+
+.delete-btn {
+	background-color: var(--red-clr);
+	color: var(--text-clr);
+}

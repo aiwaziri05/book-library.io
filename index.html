@@ -7,7 +7,66 @@
 		<title>Book Library</title>
 	</head>
 	<body>
-		<h1>Book Library Project</h1>
+		<aside class="sidebar">
+			<h3>Add Book To Library</h3>
+			<form>
+				<div class="input-field">
+					<label for="book-title">Book Title</label>
+					<input type="text" class="form-control" placeholder="e.g The Hobbit" />
+				</div>
+				<div class="input-field">
+					<label for="author">Author</label>
+					<input type="text" class="form-control" placeholder="e.g R.J.J Robin" />
+				</div>
+				<div class="input-field">
+					<input type="checkbox" name="read-book" id="read-book" />
+					<label for="read-book">Read</label>
+				</div>
+				<button type="button">Add Book</button>
+			</form>
+		</aside>
+		<main class="main">
+			<h1>Book Library</h1>
+			<table>
+				<thead>
+					<th>Id</th>
+					<th>Book Title</th>
+					<th>Author</th>
+					<th>Read/Not Read</th>
+					<th>Action</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>The Hobbit</td>
+						<td>R.J.J Robin</td>
+						<td>Not Read</td>
+						<td><button class="delete-btn">Delete</button></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>The Hobbit</td>
+						<td>R.J.J Robin</td>
+						<td>Read</td>
+						<td><button class="delete-btn">Delete</button></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>The Hobbit</td>
+						<td>R.J.J Robin</td>
+						<td>Not Read</td>
+						<td><button class="delete-btn">Delete</button></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>The Hobbit</td>
+						<td>R.J.J Robin</td>
+						<td>Read</td>
+						<td><button class="delete-btn">Delete</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
 		<script src="script.js"></script>
 	</body>
 </html>
