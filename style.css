@@ -163,3 +163,14 @@ table tr:last-child {
 	background-color: var(--red-clr);
 	color: var(--text-clr);
 }
+
+.message-container {
+	width: 100%;
+	min-height: 30vh;
+	display: grid;
+	place-content: center;
+}
+
+.no-message-data {
+	color: var(--text-muted);
+}
