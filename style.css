@@ -102,6 +102,10 @@ form .input-field {
 	outline-color: var(--accent-blue);
 }
 
+.input-field:last-of-type {
+	margin-block-end: 1.5rem;
+}
+
 .input-field:focus-within > label {
 	color: var(--accent-blue);
 }
