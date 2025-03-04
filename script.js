@@ -81,8 +81,8 @@ function renderBooks() {
 						<td>${book.title}</td>
 						<td colspan="2">${book.author}</td>
 						<td>${book.pages}</td>
-						 <td><input type="checkbox" class="read-status" data-id="${book.id}" ${book.read ? 'checked' : ''}>
-                <span class="status-text">${book.read ? 'Read' : 'Not Read'}</span>
+						 <td><input type="checkbox" id="read-status" data-id="${book.id}" ${book.read ? 'checked' : ''}>
+                <label class="status-text" for="read-status">${book.read ? 'Read' : 'Not Read'}</label>
               </td>
 						<td><button class="delete-btn" data-id="${book.id}">Delete</button></td>
 					</tr>
